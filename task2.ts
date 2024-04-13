@@ -44,7 +44,7 @@ function validateTrips (shipment: Shipment, trips: Trip[]): boolean {
 
         if (currentDrop && currentPickup) {
             visitedPickups.add(currentPickup.name); // Marked visited pickups
-            visitedDrops.add(currentDrop.name);  //Marked visited drops
+            visitedDrops.add(currentDrop.name);  // Marked visited drops
         } else if (currentPickup) {
             return false;    // If pickup without drops then invalid 
         } else if (currentDrop) {
